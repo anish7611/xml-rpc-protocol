@@ -3,7 +3,8 @@
 ### My Thoughts
 
 I have a deep frustration with API's with how every action performed could be used for trackability purposes in all apps. I think RPC is a much better choice. Less leakage and more privacy-centered.
-API's are being abused very badly in modern systems.
+API's are being abused very badly in modern systems. While REST also gives more readability and control,
+they tend to analyze user patterns, think of apps like instagram, snapchat, facebook, etc, etc. 
 
 ### AI-Generated Part
 

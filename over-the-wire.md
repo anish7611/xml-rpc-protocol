@@ -89,3 +89,33 @@ Content-Length: 425
   </params>
 </methodResponse>
 ```
+
+### Compare to Modern REST API
+
+### For comparison, here's the same data exchange using a modern REST API:
+Request http
+
+```
+GET /api/customers/101 HTTP/1.1
+Host: localhost:8000
+Accept: application/json
+Response
+httpHTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 95
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "balance": 1500.0
+}
+```
+
+### Key differences:
+
+```
+XML-RPC: 617 bytes total, verbose XML encoding
+REST API: ~190 bytes total, clean JSON
+XML-RPC always uses POST (calling a method)
+REST uses HTTP verbs semantically (GET, POST, PUT, DELETE)
+```
